@@ -1,182 +1,1050 @@
-<html>
-  <head>
-  
-  <title>Red Driver 3</title>
-  	<meta property="og:title" content="Red Driver 3"/>
-  	<meta property="og:type" content="game"/>
-  	<meta property="og:url" content="https://reddriver3.com/"/>
-  	<meta property="og:image" content="https://reddriver3.com/reddriver3.png"/>
-  	<meta property="og:site_name" content="Red Driver 3"/>
-  	<meta property="fb:admins" content="500108777"/>
-  	<meta property="og:description" content="Play Red Driver 3. Beat the other cars. Now!"/>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Driver 3 – Race from Japan to New York</title>
+    <meta name="description" content="Play Red Driver 3 online — race through crowded streets from Japan to New York. Complete missions, dodge explosives, and master the nitro. No Flash plugin required!">
+    <meta property="og:image" content="https://reddriver3.com/reddriver3.png">
+    <meta property="og:image:type" content="image/png">
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=111955649005088";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-  
-<div class="content">
-<h1>Play Red Driver 3</h1><br />
-Get ready to beat the other drivers at Red Driver 3: Travel from Japan to New York racing through the crowded streets. Try to beat all the objectives in each location. Use your driving skills and hit the nitro when you have a need for speed. Objectives include survival, collection, damaging without killing your car, slalom, dodging explosives and much more. Complete each level on each stage on all three level difficulties to beat the game.<br /><br />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Ruffle Flash Emulator -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <style>
+        :root {
+            --red-primary: #E01B24;
+            --red-dark: #A30D14;
+            --red-glow: #FF2D38;
+            --black-deep: #0A0A0C;
+            --black-card: #111115;
+            --black-surface: #18181E;
+            --gray-700: #2A2A32;
+            --gray-500: #4A4A56;
+            --gray-300: #8A8A96;
+            --gray-100: #CDCDD4;
+            --white: #F0F0F4;
+            --yellow-accent: #FFD60A;
+            --orange-accent: #FF6B2B;
+        }
 
-<div style="height:260;padding:5px;">
-	<div style="float:left;">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Reddriver content left -->
-		<ins class="adsbygoogle"
-		     style="display:inline-block;width:300px;height:250px"
-		     data-ad-client="ca-pub-9213475965498566"
-		     data-ad-slot="4872254338"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-	<div style="float:right;">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Reddriver content right -->
-		<ins class="adsbygoogle"
-		     style="display:inline-block;width:300px;height:250px"
-		     data-ad-client="ca-pub-9213475965498566"
-		     data-ad-slot="6348987531"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-</div>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-<div class="fbinfobox" style="width: 600px;">
-	<object type='application/x-shockwave-flash' data='red-driver-3.swf' width='600' height='480'><param name='flashvars' /><param name='allowScriptAccess' value='always' /><param name='movie' value='reddriver3.swf' /><param name='bgcolor' value='#000000'></object>
-</div>
-<br /><br />
-<div class="fbinfobox" style="width: 600px;"> You like it? Share it:  
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style">
-<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-<a class="addthis_button_tweet"></a>
-<a class="addthis_counter addthis_pill_style"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=dittes"></script>
-<!-- AddThis Button END -->
-</div><br />
+        html {
+            scroll-behavior: smooth;
+        }
 
-<div class="fbgreybox" style="width: 600px;">
-<strong>How far did you get? Share your score:</strong><br /><br />
-<div class="fb-comments" data-href="https://reddriver3.com" data-width="600"></div>
-</div>
+        body {
+            background: var(--black-deep);
+            color: var(--gray-100);
+            font-family: 'Barlow', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-<br /><br />
-<div class="footer">
-Another fine <a href="https://biuno.com">Biuno</a> Game. <a href="https://4hourventure.com/imprint" rel="nofollow">Imprint</a>. Have fun! 
-</div>
-</div>
-</div>
+        /* ──── HERO / HEADER ──── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+            background:
+                radial-gradient(ellipse 80% 50% at 50% 0%, rgba(224,27,36,0.15) 0%, transparent 60%),
+                linear-gradient(180deg, var(--black-deep) 0%, #0D0D12 100%);
+        }
 
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--red-primary), var(--orange-accent), var(--red-primary), transparent);
+        }
 
+        /* road lines animation */
+        .road-lines {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            overflow: hidden;
+            pointer-events: none;
+            opacity: 0.04;
+        }
+        .road-lines::before,
+        .road-lines::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 200%;
+            background: repeating-linear-gradient(
+                to bottom,
+                var(--white) 0px,
+                var(--white) 40px,
+                transparent 40px,
+                transparent 80px
+            );
+            animation: roadScroll 3s linear infinite;
+        }
+        .road-lines::before { left: 30%; }
+        .road-lines::after { right: 30%; }
+        @keyframes roadScroll {
+            from { transform: translateY(-50%); }
+            to { transform: translateY(0); }
+        }
 
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_floating_style addthis_32x32_style" style="left:50px;top:50px;">
-<a class="addthis_button_facebook"></a>
-<a class="addthis_button_google_plusone_share"></a>
-<a class="addthis_button_twitter"></a>
-<a class="addthis_button_baidu"></a>
-<a class="addthis_button_wordpress"></a>
-<a class="addthis_button_compact"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=dittes"></script>
-<!-- AddThis Button END -->
+        /* NAV */
+        nav {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0;
+            position: relative;
+            z-index: 10;
+        }
 
+        .logo {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-red {
+            color: var(--red-primary);
+        }
+        .logo-badge {
+            background: var(--red-primary);
+            color: var(--white);
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
 
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+        }
+        nav a {
+            color: var(--gray-300);
+            text-decoration: none;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.25s;
+        }
+        nav a:hover { color: var(--red-glow); }
 
+        /* TITLE BLOCK */
+        .hero-title-block {
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            z-index: 10;
+        }
 
-<!-- AddThis Welcome BEGIN -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=dittes"></script>
-<script type='text/javascript'>
-addthis.bar.initialize({'default':{
-	"backgroundColor": "#000000",
-	"buttonColor": "#098DF4",
-	"textColor": "#FFFFFF",
-	"buttonTextColor": "#FFFFFF"
-},rules:[
-	{
-		"name": "AnyOther",
-		"message": "If you enjoy this game:",
-		"action": {
-			"type": "button",
-			"text": "Share this page",
-			"verb": "share",
-			"service": "preferred"
-		}
-	},
-	{
-		"name": "Twitter",
-		"match": {
-			"referringService": "twitter"
-		},
-		"message": "If you find this page helpful:",
-		"action": {
-			"type": "button",
-			"text": "Tweet it!",
-			"verb": "share",
-			"service": "twitter"
-		}
-	},
-	{
-		"name": "Facebook",
-		"match": {
-			"referringService": "facebook"
-		},
-		"message": "Tell your friends about us:",
-		"action": {
-			"type": "button",
-			"text": "Share on Facebook",
-			"verb": "share",
-			"service": "facebook"
-		}
-	},
-	{
-		"name": "Google",
-		"match": {
-			"referrer": "google.com"
-		},
-		"message": "If you like this page, let Google know:",
-		"action": {
-			"type": "button",
-			"text": "+1",
-			"verb": "share",
-			"service": "google_plusone_share"
-		}
-	}
-]});
-</script>
-<!-- AddThis Welcome END -->
+        .subtitle-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--red-primary);
+            margin-bottom: 12px;
+        }
 
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: clamp(3rem, 7vw, 5.5rem);
+            line-height: 1.05;
+            text-transform: uppercase;
+            color: var(--white);
+            letter-spacing: -0.01em;
+        }
+        h1 .highlight {
+            background: linear-gradient(135deg, var(--red-primary), var(--orange-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
+        .hero-tagline {
+            margin-top: 16px;
+            font-size: 1.15rem;
+            color: var(--gray-300);
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
 
+        /* GAME CONTAINER */
+        .game-wrapper {
+            position: relative;
+            z-index: 10;
+            margin-top: 40px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .game-frame {
+            position: relative;
+            background: var(--black-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--gray-700);
+            box-shadow:
+                0 0 60px rgba(224,27,36,0.12),
+                0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .game-frame-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: var(--black-surface);
+            border-bottom: 1px solid var(--gray-700);
+        }
+        .game-frame-dots {
+            display: flex;
+            gap: 8px;
+        }
+        .game-frame-dots span {
+            width: 12px; height: 12px;
+            border-radius: 50%;
+        }
+        .game-frame-dots span:nth-child(1) { background: var(--red-primary); }
+        .game-frame-dots span:nth-child(2) { background: var(--yellow-accent); }
+        .game-frame-dots span:nth-child(3) { background: #34C759; }
+
+        .game-frame-title {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gray-500);
+        }
+
+        .game-embed-area {
+            position: relative;
+            width: 100%;
+            /* 4:3 aspect ratio via padding trick */
+            padding-bottom: 75%;
+            background: #000;
+        }
+
+        .game-embed-area object,
+        .game-embed-area embed,
+        .game-embed-area ruffle-embed,
+        .game-embed-area ruffle-object {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .game-controls-hint {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 14px 20px;
+            background: var(--black-surface);
+            border-top: 1px solid var(--gray-700);
+            font-size: 0.85rem;
+            color: var(--gray-300);
+        }
+
+        .key-hint {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .key {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 28px;
+            padding: 0 6px;
+            background: var(--gray-700);
+            border: 1px solid var(--gray-500);
+            border-radius: 5px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.75rem;
+            color: var(--gray-100);
+            text-transform: uppercase;
+        }
+        .key svg {
+            width: 14px; height: 14px;
+            fill: var(--gray-100);
+        }
+
+        /* ──── SECTIONS ──── */
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        .section-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--red-primary);
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            text-transform: uppercase;
+            color: var(--white);
+            letter-spacing: 0.01em;
+            line-height: 1.15;
+            margin-bottom: 24px;
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 32px;
+        }
+
+        .about-text p {
+            margin-bottom: 16px;
+            color: var(--gray-100);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .stat-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .stat-card {
+            background: var(--black-card);
+            border: 1px solid var(--gray-700);
+            border-radius: 10px;
+            padding: 24px;
+            text-align: center;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .stat-card:hover {
+            border-color: var(--red-primary);
+            transform: translateY(-3px);
+        }
+        .stat-number {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: var(--red-primary);
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--gray-300);
+            margin-top: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        /* FEATURES / HOW TO PLAY */
+        .features-section {
+            background: var(--black-card);
+            border-top: 1px solid var(--gray-700);
+            border-bottom: 1px solid var(--gray-700);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            padding: 32px 24px;
+            border-radius: 10px;
+            background: var(--black-surface);
+            border: 1px solid var(--gray-700);
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .feature-card:hover {
+            border-color: var(--red-primary);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 48px; height: 48px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--red-primary), var(--orange-accent));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .feature-card h3 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 10px;
+            letter-spacing: 0.02em;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--gray-300);
+            line-height: 1.6;
+        }
+
+        /* MISSIONS */
+        .missions-list {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mission-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 24px;
+            background: var(--black-card);
+            border: 1px solid var(--gray-700);
+            border-radius: 10px;
+            transition: border-color 0.3s;
+        }
+        .mission-item:hover {
+            border-color: var(--red-primary);
+        }
+
+        .mission-icon {
+            width: 40px; height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .mission-icon.survival { background: rgba(224,27,36,0.15); }
+        .mission-icon.collect { background: rgba(255,214,10,0.15); }
+        .mission-icon.slalom { background: rgba(52,199,89,0.15); }
+        .mission-icon.dodge { background: rgba(255,107,43,0.15); }
+        .mission-icon.damage { background: rgba(175,82,222,0.15); }
+
+        .mission-info h4 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        .mission-info p {
+            font-size: 0.9rem;
+            color: var(--gray-300);
+            margin-top: 2px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: var(--black-card);
+            border-top: 1px solid var(--gray-700);
+            border-bottom: 1px solid var(--gray-700);
+        }
+
+        .faq-list {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--gray-700);
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--black-surface);
+            transition: border-color 0.3s;
+        }
+        .faq-item:hover {
+            border-color: var(--gray-500);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            text-align: left;
+            color: var(--white);
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 0.01em;
+        }
+        .faq-question:hover { color: var(--red-glow); }
+
+        .faq-chevron {
+            width: 20px; height: 20px;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+        .faq-item.open .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 24px 20px;
+            color: var(--gray-300);
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        /* SHARE */
+        .share-section {
+            text-align: center;
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--white);
+            transition: transform 0.25s, box-shadow 0.25s;
+            border: none;
+            cursor: pointer;
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        .share-btn.twitter { background: #1DA1F2; }
+        .share-btn.facebook { background: #4267B2; }
+        .share-btn.reddit { background: #FF4500; }
+        .share-btn.copy-link { background: var(--gray-700); }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid var(--gray-700);
+            padding: 40px 24px;
+            text-align: center;
+        }
+        footer p {
+            color: var(--gray-500);
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.25s;
+        }
+        footer a:hover { color: var(--red-glow); }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .powered-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 16px;
+            padding: 6px 14px;
+            border: 1px solid var(--gray-700);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            color: var(--gray-500);
+            letter-spacing: 0.05em;
+        }
+
+        /* SCROLL INDICATOR */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray-500);
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            animation: scrollPulse 2s ease infinite;
+        }
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+        .scroll-indicator svg {
+            width: 18px; height: 18px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .game-controls-hint {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+            .stat-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* FLASH NOSCRIPT FALLBACK */
+        .flash-notice {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.9);
+            color: var(--gray-300);
+            text-align: center;
+            padding: 40px;
+            z-index: 5;
+        }
+        .flash-notice h3 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--white);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+        .flash-notice p {
+            max-width: 400px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        /* Hide notice when Ruffle loads */
+        ruffle-embed + .flash-notice,
+        ruffle-object + .flash-notice {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+    <div class="road-lines"></div>
+
+    <nav>
+        <a href="#" class="logo">
+            <span class="logo-red">Red</span>Driver<span class="logo-badge">3</span>
+        </a>
+        <ul>
+            <li><a href="#play">Play</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-to-play">How to Play</a></li>
+            <li><a href="#missions">Missions</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-title-block">
+        <div class="subtitle-label">Free Online Racing Game</div>
+        <h1>Play <span class="highlight">Red Driver 3</span></h1>
+        <p class="hero-tagline">Race from Japan to New York through packed streets. Master every mission. Hit the nitro. Don't crash.</p>
+    </div>
+
+    <!-- GAME AREA -->
+    <div class="game-wrapper" id="play">
+        <div class="game-frame">
+            <div class="game-frame-header">
+                <div class="game-frame-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="game-frame-title">Red Driver 3 &mdash; Powered by Ruffle</div>
+                <div style="width:52px;"></div>
+            </div>
+            <div class="game-embed-area" id="game-container">
+                <object
+                    type="application/x-shockwave-flash"
+                    data="RedDriver3.swf"
+                    width="100%"
+                    height="100%"
+                    id="red-driver-3-game"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                >
+                    <param name="movie" value="./red-driver-3.swf" />
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#000000" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="scale" value="showall" />
+                    <param name="wmode" value="direct" />
+                </object>
+                <noscript>
+                    <div class="flash-notice">
+                        <h3>JavaScript Required</h3>
+                        <p>Red Driver 3 uses the Ruffle Flash emulator, which requires JavaScript. Please enable JavaScript in your browser to play.</p>
+                    </div>
+                </noscript>
+            </div>
+            <div class="game-controls-hint">
+                <div class="key-hint">
+                    <span class="key">
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" transform="rotate(-90 12 12)"/></svg>
+                    </span>
+                    Accelerate
+                </div>
+                <div class="key-hint">
+                    <span class="key">
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" transform="rotate(90 12 12)"/></svg>
+                    </span>
+                    Brake
+                </div>
+                <div class="key-hint">
+                    <span class="key">
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" transform="rotate(180 12 12)"/></svg>
+                    </span>
+                    <span class="key">
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </span>
+                    Steer
+                </div>
+                <div class="key-hint">
+                    <span class="key">Space</span>
+                    Nitro
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        Scroll
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+    </div>
+</section>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about">
+    <div class="section-label">About the Game</div>
+    <h2>From Tokyo to New York — One Red Car</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>Red Driver 3 is the ultimate high-octane arcade racing game that takes you on a global road trip unlike any other. Originally released in 2014, it quickly became one of the most popular Flash racing games ever made, challenging players to weave through dense traffic across some of the world's most iconic cities.</p>
+            <p>Starting on the bustling highways of Japan and ending on the chaotic streets of New York, each stage brings new challenges, faster traffic, and increasingly demanding objectives. Whether you're dodging explosives, collecting coins, or simply trying to survive without totaling your car, every second behind the wheel is a white-knuckle experience.</p>
+            <p>Now, thanks to the Ruffle Flash emulator, you can play Red Driver 3 directly in your modern browser — no Flash plugin required, no downloads, no hassle. Just pure racing adrenaline.</p>
+        </div>
+        <div class="stat-cards">
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Global Locations</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Difficulty Levels</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Missions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Replays</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ HOW TO PLAY ═══════════════ -->
+<section class="features-section" id="how-to-play">
+    <div style="max-width:1000px;margin:0 auto;">
+        <div class="section-label">How to Play</div>
+        <h2>Master the Road in 3 Steps</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏁</div>
+                <h3>Pick Your Stage</h3>
+                <p>Choose from locations spanning Japan to New York. Each city has its own traffic patterns, road layouts, and atmosphere. Start as a Rookie and work your way up through Amateur to Advanced difficulty.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Complete Objectives</h3>
+                <p>Every level comes with a unique mission — survive for a set time, collect scattered coins, dodge mines, weave through slalom gates, or push other cars without destroying your own. Pay attention to the briefing before each run.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <h3>Use Your Nitro</h3>
+                <p>When you need a burst of speed to beat the clock or outrun danger, hit your nitro boost with the spacebar. Time it right and you'll blast through traffic. Use it carelessly and you'll end up as scrap metal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ MISSIONS ═══════════════ -->
+<section id="missions">
+    <div class="section-label">Mission Types</div>
+    <h2>What You'll Face on the Road</h2>
+    <p style="color:var(--gray-300);max-width:640px;margin-bottom:8px;font-size:1.05rem;">Red Driver 3 keeps things fresh with a variety of mission types. Here's what to expect as you race across the globe.</p>
+    <div class="missions-list">
+        <div class="mission-item">
+            <div class="mission-icon survival">🛡️</div>
+            <div class="mission-info">
+                <h4>Survival</h4>
+                <p>Stay alive for the required time without crashing. Sounds easy — until the traffic density ramps up and trucks start swerving.</p>
+            </div>
+        </div>
+        <div class="mission-item">
+            <div class="mission-icon collect">💰</div>
+            <div class="mission-info">
+                <h4>Collection</h4>
+                <p>Pick up coins scattered across all lanes. You'll need sharp reflexes and quick lane changes to grab them all before time runs out.</p>
+            </div>
+        </div>
+        <div class="mission-item">
+            <div class="mission-icon slalom">🔀</div>
+            <div class="mission-info">
+                <h4>Slalom</h4>
+                <p>Navigate through a series of gates, alternating left and right. Miss a gate and you fail. Add traffic to the mix and it becomes a true test of precision.</p>
+            </div>
+        </div>
+        <div class="mission-item">
+            <div class="mission-icon dodge">💣</div>
+            <div class="mission-info">
+                <h4>Dodge Explosives</h4>
+                <p>Mines and explosives are planted across the highway. One wrong move and your car goes up in flames. Stay focused and react fast.</p>
+            </div>
+        </div>
+        <div class="mission-item">
+            <div class="mission-icon damage">💥</div>
+            <div class="mission-info">
+                <h4>Damage Without Dying</h4>
+                <p>Get close to other cars and trade paint — but don't take too much damage or your car explodes. It's a balancing act of aggression and self-preservation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ FAQ ═══════════════ -->
+<section class="faq-section" id="faq">
+    <div style="max-width:1000px;margin:0 auto;">
+        <div class="section-label">Frequently Asked Questions</div>
+        <h2>Got Questions?</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How can I play Red Driver 3 without Flash Player?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        This website uses <strong>Ruffle</strong>, an open-source Flash emulator written in Rust and compiled to WebAssembly. It runs directly in your browser without any plugins, downloads, or installations. Just click Play and the game loads automatically. Ruffle is safe, fast, and works on all modern browsers including Chrome, Firefox, Safari, and Edge.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What are the controls?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Use the <strong>arrow keys</strong> to steer and control your speed. Up arrow accelerates, down arrow brakes, and left/right arrows steer your car between lanes. Press the <strong>spacebar</strong> to activate your nitro boost for a burst of speed. The controls are responsive and designed for quick reflexes.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Does Red Driver 3 work on mobile or tablet?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Red Driver 3 was originally designed for desktop play with keyboard controls. While the Ruffle emulator can technically load on mobile browsers, the gameplay experience is best on a desktop or laptop computer with a physical keyboard. Touchscreen controls are not natively supported by the game.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Is this game free to play?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Yes, Red Driver 3 is completely free to play with no ads, no sign-ups, and no hidden costs. Just load the page and start racing. It has always been a free browser game since its original release in 2014.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    The game isn't loading — what should I do?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        First, make sure JavaScript is enabled in your browser — Ruffle needs it to function. Try refreshing the page or clearing your browser cache. If the game still doesn't load, try a different browser (Chrome and Firefox tend to work best). Some privacy-focused browser extensions may block WebAssembly; temporarily disabling them can help. If problems persist, the Ruffle emulator may not yet support a specific ActionScript feature used by the game — Ruffle is actively maintained and compatibility improves with each release.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Who made Red Driver 3?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        Red Driver 3 was developed by <strong>Filipe Sheepwolf</strong> and published by <strong>Biuno</strong>. It was originally released in May 2014 and became one of the most played Flash racing games on portals like Y8, Addicting Games, and Silvergames.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How many levels are there?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        The game features multiple stages spread across 5 global locations — from Japan to New York. Each location has several missions, and every mission can be played on three difficulty levels: Rookie, Amateur, and Advanced. To fully complete the game, you need to beat all missions on all difficulties, giving you dozens of challenges in total.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Can I save my progress?
+                    <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        The original game uses Flash local shared objects (similar to cookies) for saving progress. Ruffle supports this feature, so your progress should be saved between sessions in the same browser. However, clearing your browser data or switching browsers will reset your save. For the most reliable experience, stick to one browser and avoid clearing site data for this page.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ SHARE ═══════════════ -->
+<section class="share-section" id="share">
+    <div class="section-label">Spread the Word</div>
+    <h2>Like It? Share It.</h2>
+    <p style="color:var(--gray-300);margin-bottom:8px;">Challenge your friends and see who can complete all missions first.</p>
+    <div class="share-buttons">
+        <a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=I%27m%20playing%20Red%20Driver%203%20%E2%80%94%20race%20from%20Japan%20to%20New%20York!%20%F0%9F%8F%8E%EF%B8%8F&url=https://reddriver3.com" target="_blank" rel="noopener">
+            𝕏 Post
+        </a>
+        <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://reddriver3.com" target="_blank" rel="noopener">
+            Facebook
+        </a>
+        <a class="share-btn reddit" href="https://reddit.com/submit?url=https://reddriver3.com&title=Play%20Red%20Driver%203%20%E2%80%94%20Classic%20Flash%20Racing%20Game" target="_blank" rel="noopener">
+            Reddit
+        </a>
+        <button class="share-btn copy-link" onclick="navigator.clipboard.writeText('https://reddriver3.com');this.textContent='Copied!';">
+            Copy Link
+        </button>
+    </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+    <div class="footer-links">
+        <a href="#play">Play Game</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://biuno.com" target="_blank" rel="noopener">Biuno</a>
+        <a href="https://4hourventure.com/imprint" target="_blank" rel="noopener">Imprint</a>
+    </div>
+    <p>Another fine <a href="https://biuno.com">Biuno</a> game. Red Driver 3 by Filipe Sheepwolf.</p>
+    <div class="powered-badge">
+        ⚡ Flash emulation powered by <a href="https://ruffle.rs" target="_blank" rel="noopener" style="margin-left:4px;">Ruffle</a>
+    </div>
+</footer>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-28071072-4', 'reddriver3.com');
-  ga('send', 'pageview');
-  ga('set', 'anonymizeIp', true);
-
+    function toggleFaq(btn) {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+        // Toggle clicked
+        if (!wasOpen) item.classList.add('open');
+    }
 </script>
-
-
-  </body>
+</body>
 </html>
